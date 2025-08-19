@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENT</title>
+</head>
+<style>
+    body{
+        background-color:#f5f2f0;
+    }
+    .fullpage{
+        display: flex;
+        padding: 60px;
+    }
+    .menubar{
+        background-color: white;
+        width: 300px;
+        margin-right: 30px;
+        
+        
+    }
+    .mainbar{
+        background-color: white;
+        width: 900px;
+        
+    }
+    .title{
+        background-color:#0390b2;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        margin-top: 0px;
+        width: 300px;
+        height: 70px;
+        display: flex;                
+        align-items: center;
+        justify-content: center;    
+        text-align: center;
+    }
+    ul{
+        display: flex;  
+        flex-direction: column;              
+        align-items: center;
+        justify-content: center;    
+        margin-right: 38px;
+    }
+   .menulist{
+    list-style: none;
+    background-color: #f5f2f0;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    list-style: none;               
+    padding: 10px;
+   }
+   .menulink{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    transition: 0.3s;
+    
+   }
+   .menulist:hover{
+    background-color: #0390b2;
+   }
+   .twoarw{
+    font-weight: bolder;
+    font-size: 30px;
+    float: right;
+    margin-bottom: 15px;
+   }
+   .allhosp{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  gap: 20px;
+   }
+   .hospcard{
+    width: 800px;
+    margin-left: 20px;
+    background-color: #f5f2f0;
+    
+   }
+   .tag{
+      background-color: #e6e1e1;
+      border-radius: 15px;
+      padding: 2px 10px;
+      margin: 20px 0 0 20px;
+      font-size: 0.8rem;
+
+   }
+   .cardmenu{
+    display: flex;
+    margin-left: 20px;
+   }
+   .eachmenu{
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: #e6e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+   }
+   #active .menulist{
+    background-color: #0390b2;
+   }
+         .logo{
+    height:80px; 
+    width:200px;
+    margin-left: 50px;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    background-color:#e6e1e1;
+    border-bottom: 10px solid #0390b2;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin-right: 10px;
+   }
+.navlist{
+    list-style-type: none;
+    margin: 25px;
+}
+.navlink{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0390b2;
+    display: block;
+    
+}
+.ulnav{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 20px;
+    
+}
+.navlink.active {
+    background-color: #0390b2;
+    color: white;
+    border-radius: 4px;
+   width: 150px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.navlink:hover:not(.active) {
+    background-color: #0390b2;
+    border-radius: 4px;
+    color: white;
+    width: 150px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+</style>
+<body>
+    <nav class="nav">
+        <div  class="logoo">
+        <img src="logo2.png" alt="" class="logo">    
+        </div>
+
+        <ul class="ulnav">
+            <li class="navlist"><a href="./home.html" class="navlink">HOME</a></li>
+            <li class="navlist"><a href="./about.html" class="navlink">ABOUT US</a></li>
+            <li class="navlist"><a href="./dept.html" class="navlink active ">SPECIALITIES</a></li>
+            <li class="navlist"><a href="./contact.html" class="navlink">CONTACT</a></li>        
+        </ul>
+        
+    </nav>
+    <img src="./cmnhero.png" alt="" width="100%" height="400px" >
+    <div class="fullpage">
+        <div class="menubar">
+            <h2 class="title">Our Departments</h2>
+            <ul>
+                 <a href="./anas.html" class="menulink"><li class="menulist" >Anaesthesiology<span class="twoarw">»</span></li></a>
+                <a href="./andrology.html" class="menulink"><li class="menulist" >Andrology<span class="twoarw">»</span></li></a>
+                <a href="./cardio.html" class="menulink" ><li class="menulist">Cardiology<span class="twoarw">»</span></li></a>
+                <a href="./cardiothoraic.html" class="menulink"><li class="menulist" >Cardiothoraic Surgery<span class="twoarw">»</span></li></a>
+                <a href="./dental.html" class="menulink" ><li class="menulist">Dentistry<span class="twoarw">»</span></li></a>
+                <a href="./Derm.html" class="menulink"><li class="menulist">Dermatology<span class="twoarw">»</span></li></a>
+                <a href="./diab.html" class="menulink"><li class="menulist">Diabetology<span class="twoarw">»</span></li></a>
+                <a href="./Emergency.html" class="menulink" ><li class="menulist">Emergency Care<span class="twoarw">»</span></li></a>
+                <a href="./ent.html" class="menulink" id="active"><li class="menulist">E.N.T<span class="twoarw">»</span></li></a>
+                <a href="./endocrine.html" class="menulink"><li class="menulist">Endocrinology<span class="twoarw">»</span></li></a>
+                <a href="./fertility.html" class="menulink"><li class="menulist">Fertility and IVF<span class="twoarw">»</span></li></a>
+                <a href="./gastro.html" class="menulink"><li class="menulist">Gastroenterology<span class="twoarw">»</span></li></a>
+                <a href="./genmed.html" class="menulink"><li class="menulist">General Medicine<span class="twoarw">»</span></li></a>
+                <a href="./gensur.html" class="menulink"><li class="menulist">General Surgery<span class="twoarw">»</span></li></a>
+                <a href="./hematology.html" class="menulink"><li class="menulist">Hematology<span class="twoarw">»</span></li></a>
+                <a href="./joinrep.html " class="menulink"><li class="menulist">Joint Replacement Surgery<span class="twoarw">»</span></li></a>
+                <a href="./nephrology.html" class="menulink"><li class="menulist">Nephrology<span class="twoarw">»</span></li></a>
+                <a href="./neurology.html" class="menulink"><li class="menulist">Neurology<span class="twoarw">»</span></li></a>
+                <a href="./neusur.html" class="menulink"><li class="menulist">Neurosurgery<span class="twoarw">»</span></li></a>
+                <a href="./obstgyn.html" class="menulink"><li class="menulist">Obstetrics and Gynaecology<span class="twoarw">»</span></li></a>
+                <a href="./onco.html" class="menulink"><li class="menulist">Oncology<span class="twoarw">»</span></li></a>
+                <a href="./opthalmology.html" class="menulink"><li class="menulist">Opthalmology<span class="twoarw">»</span></li></a>
+                <a href="./transplant.html" class="menulink"><li class="menulist">Organs <br>Transplantation<span class="twoarw">»</span></li></a>
+                <a href="./ortho.html" class="menulink"><li class="menulist">Orthopedics<span class="twoarw">»</span></li></a>
+                <a href="./paedia.html" class="menulink"><li class="menulist">Pediatrics<span class="twoarw">»</span></li></a>
+                <a href="./plascos.html" class="menulink"><li class="menulist">Plastic and Cosmetic Surgery<span class="twoarw">»</span></li></a>
+                <a href="./psychia.html" class="menulink"><li class="menulist">Psychiatry<span class="twoarw">»</span></li></a>
+                <a href="./pulmno.html" class="menulink"><li class="menulist">Pulmonology<span class="twoarw">»</span></li></a>
+                <a href="./rad.html" class="menulink"><li class="menulist">Radiology<span class="twoarw">»</span></li></a>
+                <a href="./rheu.html" class="menulink"><li class="menulist">Rheumatology<span class="twoarw">»</span></li></a>
+                <a href="./robo.html" class="menulink"><li class="menulist">Robotics Surgery<span class="twoarw">»</span></li></a>
+                <a href="./urology.html" class="menulink"><li class="menulist">Urology<span class="twoarw">»</span></li></a>
+                <a href="./vascular.html" class="menulink"><li class="menulist">Vascular Surgery<span class="twoarw">»</span></li></a>
+            </ul>
+        </div>
+        <div class="mainbar">
+            <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; font-size: 25px; margin-left:10px;  color: #0390b2;">E.N.T</h3>
+            <img src="./enthero.png" width="100%" height="300px">
+            <p style="font-size: 15px; padding: 20px; text-align: justify; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Explore trusted ENT hospitals and specialists in Madurai for ear, nose, and throat care. From hearing issues to sinus and throat conditions, find expert diagnosis and treatment near you.</p>
+            <div class="allhosp">
+                <div class="hospcard">
+                    <img src="./Appolo.png" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Apollo Speciality Hospitals</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lake View Road, Kk Nagar, Madurai - 625020</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:8062972765" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="www.apollohospitals.com" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/waSzqhUDBpXrfaFy5" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./AR.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">AR Hospital Pvt Ltd</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">KK Nagar, near District Court Madurai-625 020</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:9952540727" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://arhospitals.co.in/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/xa5wF2RaW6H9TQNa8" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./Balaji.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Balaji Multispeciality Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">95, Palam Station Road,( Near Muthumark Shop ) Sellur, Madurai-625002</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04524901555" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://balajihospitalmdu.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/pkC9Zjf86qv4E6Qu7" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./bharathi.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Bharathi Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">115, Alagar Kovil Main Rd, K.Pudur, Madurai-625007</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04524250785" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.bharathihospital.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/Yr68euYUWWTPAoso9" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./booma.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Booma Nursing Home</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">22, Gokhale Rd, Chinnachokikulam, Madurai-625 002</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04524002500" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.boomanursinghome.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/9mzfpCpXKqjJVrMv8" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./Devadoss.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Devadoss Hospitals Pvt Ltd</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Alagar Kovil Main Rd, Surveyor colony, Madurai-625007</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04524521000" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.devadosshospitals.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/DFZwJ8CPCjaKHKNv7" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./Devaki.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Devaki Speciality Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">26 Theni Main Rd, AA Rd, Madurai-625 016</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04522288841" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.devakihospital.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/JfoQuWuQgBJ8FvtS8" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./guru.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Guru Multispeciality Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">120-F,4, Pandikovil RingRd Madurai - 625017</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="08938933893" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://guruhospitals.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/N9VNZdvbC87mcYeN9" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./iniya.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Iniya Multispeciality Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Vandiyur Main Rd, Vaigai Colony, Sathamangalam, Madurai-625020</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="098423 47284" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="http://iniyahospital.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/sg9EsXHsoTXAc96DA
+                        " class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./ntchosp.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">NTC Gastro and Multispeciality Hospitals</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Thathaneri MainRd, Vaithiyanathapuram, Madurai-625 018</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:6385602664" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.ntchospitals.com/NTC-Hospital-NABH-Accredited-Hospital.php" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/f9U6qfNeXQx3u6UF6" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./preethi.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Preethi Multispeciality Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Melur MainRd, Uthangudi, Madurai-625 107</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:7810044444" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://preethihospitals.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/mJA1bqn9TL4vakFc6" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./rahavendarhosp.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Rahavendar Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Kuruvikaran Salai, Kamarajar Salai, Madurai-625 009</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04524226600" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.rahavendarhospital.com/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/o6NKYH7G42XBJxX1A" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./shenbagam.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Shenbagam Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">15, 16, North Cross, 3rd St, Anna Nagar, Sathamangalam, Madurai-625020</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:0452 428 3333" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://shenbagamhospital.org/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/JyQfxGn9XZqDczta7" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+
+                <div class="hospcard">
+                    <img src="./vadamalayan.png" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Vadamalayan Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">15/1, Jawahar Road, Madurai-625002</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:0452 254 5400" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://www.vadamalayan.org/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/M2iCDQNhEGEcZ37bA" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./velammal.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Velammal Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Velammal Village, Airport-Mattuthavani Ring Rd, Chinthamani, Madurai-625009</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:04527113333" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://velammalmedicalcollege.edu.in/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/am3QY6HA4jW9AuYE8" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="hospcard">
+                    <img src="./vikram.jpg" alt="" style="display: flex; width: 200px; height: 190px; float: right; margin: 20px 10px 20px 0;">
+                    <h3 style=" margin: 20px 0 0 20px; word-spacing: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder;">Vikram Multispeciality Hospital</h3>
+                    <p style="margin: 20px 0 20px 20px; color: #78726e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Sivagangai Main Road, near Pandi Kovil , Madurai 625 020</p>
+                    <span class="tag">Private</span>
+                    <span class="tag">Multispeciality</span>
+                    <p style="margin-left: 20px; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>TIMINGS:</strong><br>Mon-Sun | 24/7</p>
+                    <div class="cardmenu">
+                        <a href="tel:9442647901" class="eachmenu"><img src="call.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://vikramhospitals.org/" class="eachmenu"><img src="web.png" width="25px" height="25px" alt=""></a>
+                        <a href="https://maps.app.goo.gl/M2iCDQNhEGEcZ37bA" class="eachmenu"><img src="map.png" width="25px" height="25px" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

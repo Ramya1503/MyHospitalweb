@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #e6e1e1;
+}
+
+.logo{
+    height:80px; 
+    width:200px;
+    margin-left: 50px;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    background-color:#e6e1e1;
+    border-bottom: 10px solid #0390b2;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin-right: 10px;
+
+} 
+.navlist{
+    list-style-type: none;
+    margin: 25px;
+    
+    
+}
+.navlink{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0390b2;
+    display: block;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 20px;
+    
+}
+.navlink.active {
+    background-color: #0390b2;
+    color: white;
+    border-radius: 4px;
+   width: 150px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.navlink:hover:not(.active) {
+    background-color: #0390b2;
+    border-radius: 4px;
+    color: white;
+    width: 150px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.aboutus{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+.abtimg{
+    width: 650px;
+    height: 580px;
+}
+.abtimgg{
+    width: 650px;
+    height: 580px;
+}
+.abtcntnt{
+    margin-left: 30px;
+    width: 550px;
+}
+.abtpara{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 1.8;
+}
+.vmq{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 60px;
+}
+.imgvmq{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0 0 50px;
+}
+.vmqh{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b6ada8;
+    margin-top: 100px;
+    color: white;
+    padding: 40px;
+}
+
+.ql img {
+    border-radius: 20px;
+    width: 350px;
+    margin: 40px 0 0 60px;
+}
+
+.ql h3, 
+.fdept h3 {
+    font-weight: bold;
+    color: #0390b2;
+}
+
+.cnft p {
+    margin: 15px 0 0 38px;
+    font-size: 16px;
+}
+
+.icnft {
+    margin: 20px 0 0 38px;
+}
+.icnft i {
+    background-color: #0390b2;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+
+.ql1 {
+    display: flex;
+    gap: 50px;
+    margin: 15px 0 0 38px;
+}
+
+.ql12 a {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.ql12 a i {
+    margin-right: 8px;
+    color: #0390b2;
+}
+
+.fdept1, .fdept2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fdept1 a,
+.fdept2 a {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.fdept1 a i,
+.fdept2 a i {
+    margin-right: 8px;
+    color: #0390b2;
+}
+
+
+.fdept1, .fdept2 {
+    width: 50%;
+    padding-left: 80px;
+}
+.fdept1 a:hover,
+.fdept2 a:hover,
+.ql12 a:hover,
+.cnft p:hover {
+    color: #0390b2; 
+    transition: 0.3s ease;
+}
+.icnft i:hover{
+    color: #0d5e94;
+    transition: 0.3s ease;
+}
+
+
+</style>
+<nav class="nav">
+        <div  class="logoo">
+        <img src="logo2.png" alt="" class="logo">    
+        </div>
+        <ul>
+            <li class="navlist"><a href="./home.html" class="navlink">HOME</a></li>
+            <li class="navlist"><a href="./about.html" class="navlink active">ABOUT US</a></li>
+            <li class="navlist"><a href="./dept.html" class="navlink  ">SPECIALITIES</a></li>
+            <li class="navlist"><a href="./contact.html" class="navlink">CONTACT</a></li>        
+        </ul>
+</nav>
+<body>
+    <div class="aboutus">
+        <div class="abtimg">
+            <img src="abtimg.jpg" alt="" class="abtimgg">
+        </div>
+            <div class="abtcntnt">
+                <h3 style="font-size: 15px; color: darkviolet; letter-spacing: 2px; margin-bottom: 8px;">ABOUT US</h3>
+                <h2 style="letter-spacing: 3px; font-size: 35px;">Who We Are</h2>
+                <h2 style="font-weight: bolder; font-size: 40px; letter-spacing: 5px; color: #0390b2;">Madurai Healthcare</h2>
+                <h3 style="color: darkviolet;">______</h3>
+                <p class="abtpara">Welcome to Madurai Health Connect, your trusted gateway to the city's leading hospitals and healthcare services. Our mission is to make quality medical care accessible, transparent, and easy to navigate for every resident of Madurai. We are a community-driven platform that helps you effortlessly find the right hospital, whether you need emergency care, specialized treatment, or routine checkups. Our curated directory provides a comprehensive list of hospitals and clinics, with details on specialties, facilities, contact information, and locations, regularly updated for accuracy and reliability through a user-friendly interface. We also highlight top-rated healthcare providers, showcase the latest medical advancements in the city, and share health tips to keep you informed. With our platform, you can make well-informed decisions about your healthcare. We aim to connect patients with the right medical professionals at the right time. Our vision is to build a healthier and more connected Madurai.</p>
+               
+            </div>
+    </div>
+
+    <div class="vmq" >
+        <div class="vision" style="background-color: rgb(241, 226, 255);">
+            <img src="./vision.png" alt="" class="imgvmq">
+            <h2 class="vmqh">Our Vision</h2>
+            <p style="margin: 20px 50px 0 50px; line-height: 1.5; text-align: justify;">To be the most trusted and comprehensive healthcare directory in Madurai, connecting people to the right hospitals, doctors, and medical services for their needs.</p>
+        </div>
+        <div class="mission" style="background-color: rgb(207, 228, 250);">
+            <img src="./mission.png" alt="" class="imgvmq">
+            <h2 class="vmqh">Our Mission</h2>
+            <p style="margin: 20px 50px 0 50px; line-height: 1.5; text-align: justify;">To simplify healthcare access by providing accurate, up-to-date hospital information, enabling informed decisions, and bridging the gap between patients and quality care providers.</p>
+        </div>
+        <div class="quality" style="background-color: rgb(235, 205, 236);">
+            <img src="quality.png" alt="" class="imgvmq">
+            <h2 class="vmqh">Quality Policy</h2>
+            <p style="margin: 20px 50px 0 50px; line-height: 1.5; text-align: justify;">We ensure our listings are verified, our information is reliable, and our platform is user-friendly — so every search leads to better healthcare choices.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+    <div class="ql">
+        <img src="logowhite.png" alt="" style="border-radius: 20px; width: 350px; margin: 40px 0 0 60px;">
+        <p style="letter-spacing: 5px; margin-left: 35px;">---------------------------------------</p>
+        
+        <h3 style="margin: 10px 0 0 37px; font-weight: bold; color: #0390b2;">Contacts</h3> 
+        <div class="cnft">
+            <p><i class="fa-solid fa-envelope" style="margin-right: 10px; color: #0390b2;"></i>maduraihealthcare@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="margin-right: 10px; color: #0390b2;"></i>+91 7863524198</p>
+        </div>
+
+        <div class="icnft">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+        <p style="letter-spacing: 5px; margin-left: 35px; margin-top: 20px;">---------------------------------------</p>
+        <h3 style="margin: 10px 0 0 37px; font-weight: bold; color: #0390b2;">Quick Links</h3> 
+        <div class="ql1">
+            <div class="ql12">
+                <a href="#"><i class="fa-regular fa-hand-point-right"></i> Home</a>
+                <a href="#"><i class="fa-regular fa-hand-point-right"></i> About Us</a>
+            </div>
+            <div class="ql12">
+                <a href="#"><i class="fa-regular fa-hand-point-right"></i> Specialities</a>
+                <a href="#"><i class="fa-regular fa-hand-point-right"></i> Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 style="margin: 40px 0 20px 80px; font-weight: bold; color: #0390b2;">Departments</h3>
+        <div style="display: flex;">
+            <div class="fdept1">
+                <a href="anas.html"><i class="fa-regular fa-hand-point-right"></i> Anaesthesiology</a>
+                <a href="andrology.html"><i class="fa-regular fa-hand-point-right"></i> Andrology</a>
+                <a href="cardio.html"><i class="fa-regular fa-hand-point-right"></i> Cardiology</a>
+                <a href="cardiothoraic.html"><i class="fa-regular fa-hand-point-right"></i> Cardiothoraic Surgery</a>
+                <a href="dental.html"><i class="fa-regular fa-hand-point-right"></i> Dentistry</a>
+                <a href="Derm.html"><i class="fa-regular fa-hand-point-right"></i> Dermatology</a>
+                <a href="diab.html"><i class="fa-regular fa-hand-point-right"></i> Diabetology</a>
+                <a href="Emergency.html"><i class="fa-regular fa-hand-point-right"></i> Emergency and Critical Care</a>
+                <a href="ent.html"><i class="fa-regular fa-hand-point-right"></i> E.N.T</a>
+                <a href="endocrine.html"><i class="fa-regular fa-hand-point-right"></i> Endocrinology</a>
+                <a href="fertility.html"><i class="fa-regular fa-hand-point-right"></i> Fertility and IVF</a>
+                <a href="gastro.html"><i class="fa-regular fa-hand-point-right"></i> Gastroenterology</a>
+                <a href="genmed.html"><i class="fa-regular fa-hand-point-right"></i> General Medicine</a>
+                <a href="gensur.html"><i class="fa-regular fa-hand-point-right"></i> General Surgery</a>
+                <a href="hematology.html"><i class="fa-regular fa-hand-point-right"></i> Hematology</a>
+                <a href="joinrep.html"><i class="fa-regular fa-hand-point-right"></i> Joint Replacement Surgery</a>
+                <a href="nephrology.html"><i class="fa-regular fa-hand-point-right"></i> Nephrology</a>
+            </div>
+
+            <div class="fdept2">
+                <a href="neurology.html"><i class="fa-regular fa-hand-point-right"></i> Neurology</a>
+                <a href="neusur.html"><i class="fa-regular fa-hand-point-right"></i> Neurosurgery</a>
+                <a href="obstgyn.html"><i class="fa-regular fa-hand-point-right"></i> Obstetrics and Gynaecology</a>
+                <a href="onco.html"><i class="fa-regular fa-hand-point-right"></i> Oncology</a>
+                <a href="opthalmology.html"><i class="fa-regular fa-hand-point-right"></i> Opthalmology</a>
+                <a href="transplant.html"><i class="fa-regular fa-hand-point-right"></i> Organs Transplantation</a>
+                <a href="ortho.html"><i class="fa-regular fa-hand-point-right"></i> Orthopedics</a>
+                <a href="paedia.html"><i class="fa-regular fa-hand-point-right"></i> Pediatrics</a>
+                <a href="plascos.html"><i class="fa-regular fa-hand-point-right"></i> Plastic and Cosmetic Surgery</a>
+                <a href="psychia.html"><i class="fa-regular fa-hand-point-right"></i> Psychiatry</a>
+                <a href="pulmno.html"><i class="fa-regular fa-hand-point-right"></i> Pulmonology</a>
+                <a href="rad.html"><i class="fa-regular fa-hand-point-right"></i> Radiology</a>
+                <a href="rheu.html"><i class="fa-regular fa-hand-point-right"></i> Rheumatology</a>
+                <a href="robo.html"><i class="fa-regular fa-hand-point-right"></i> Robotics Surgery</a>
+                <a href="urology.html"><i class="fa-regular fa-hand-point-right"></i> Urology</a>
+                <a href="vascular.html"><i class="fa-regular fa-hand-point-right"></i> Vascular Surgery</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    
+</body>
+</html>
