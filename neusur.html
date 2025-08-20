@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neurosurgery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     body{
@@ -173,6 +174,105 @@
    display: flex;
    align-items: center;
    justify-content: center;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b6ada8;
+    margin-top: 40px;
+    color: white;
+    padding: 40px;
+}
+
+.ql img {
+    border-radius: 20px;
+    width: 350px;
+    margin: 40px 0 0 60px;
+}
+
+.ql h3, 
+.fdept h3 {
+    font-weight: bold;
+    color: #0390b2;
+}
+
+.cnft p {
+    margin: 15px 0 0 38px;
+    font-size: 16px;
+}
+
+.icnft {
+    margin: 20px 0 0 38px;
+}
+.icnft i {
+    background-color: #0390b2;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+
+.ql1 {
+    display: flex;
+    gap: 50px;
+    margin: 15px 0 0 38px;
+}
+
+.ql12 a {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.ql12 a i {
+    margin-right: 8px;
+    color: #0390b2;
+}
+
+.fdept1, .fdept2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fdept1 a,
+.fdept2 a {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.fdept1 a i,
+.fdept2 a i {
+    margin-right: 8px;
+    color: #0390b2;
+}
+
+
+.fdept1, .fdept2 {
+    width: 50%;
+    padding-left: 80px;
+}
+.fdept1 a:hover,
+.fdept2 a:hover,
+.ql12 a:hover,
+.cnft p:hover {
+    color: #0390b2; 
+    transition: 0.3s ease;
+}
+.icnft i:hover{
+    color: #0d5e94;
+    transition: 0.3s ease;
 }
 </style>
 <body>
@@ -444,6 +544,82 @@
                 </div>
             </div>
         
+        </div>
+    </div>
+
+     <div class="footer">
+    <div class="ql">
+        <img src="logowhite.png" alt="" style="border-radius: 20px; width: 350px; margin: 40px 0 0 60px;">
+        <p style="letter-spacing: 5px; margin-left: 35px;">---------------------------------------</p>
+        
+        <h3 style="margin: 10px 0 0 37px; font-weight: bold; color: #0390b2;">Contacts</h3> 
+        <div class="cnft">
+            <p><i class="fa-solid fa-envelope" style="margin-right: 10px; color: #0390b2;"></i>maduraihealthcare@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="margin-right: 10px; color: #0390b2;"></i>+91 7863524198</p>
+        </div>
+
+        <div class="icnft">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+        <p style="letter-spacing: 5px; margin-left: 35px; margin-top: 20px;">---------------------------------------</p>
+        <h3 style="margin: 10px 0 0 37px; font-weight: bold; color: #0390b2;">Quick Links</h3> 
+        <div class="ql1">
+            <div class="ql12">
+                <a href="./home.html"><i class="fa-regular fa-hand-point-right"></i> Home</a>
+                <a href="./about.html"><i class="fa-regular fa-hand-point-right"></i> About Us</a>
+            </div>
+            <div class="ql12">
+                <a href="./dept.html"><i class="fa-regular fa-hand-point-right"></i> Specialities</a>
+                <a href="./contact.html"><i class="fa-regular fa-hand-point-right"></i> Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 style="margin: 40px 0 20px 80px; font-weight: bold; color: #0390b2;">Departments</h3>
+        <div style="display: flex;">
+            <div class="fdept1">
+                <a href="anas.html"><i class="fa-regular fa-hand-point-right"></i> Anaesthesiology</a>
+                <a href="andrology.html"><i class="fa-regular fa-hand-point-right"></i> Andrology</a>
+                <a href="cardio.html"><i class="fa-regular fa-hand-point-right"></i> Cardiology</a>
+                <a href="cardiothoraic.html"><i class="fa-regular fa-hand-point-right"></i> Cardiothoraic Surgery</a>
+                <a href="dental.html"><i class="fa-regular fa-hand-point-right"></i> Dentistry</a>
+                <a href="Derm.html"><i class="fa-regular fa-hand-point-right"></i> Dermatology</a>
+                <a href="diab.html"><i class="fa-regular fa-hand-point-right"></i> Diabetology</a>
+                <a href="Emergency.html"><i class="fa-regular fa-hand-point-right"></i> Emergency and Critical Care</a>
+                <a href="ent.html"><i class="fa-regular fa-hand-point-right"></i> E.N.T</a>
+                <a href="endocrine.html"><i class="fa-regular fa-hand-point-right"></i> Endocrinology</a>
+                <a href="fertility.html"><i class="fa-regular fa-hand-point-right"></i> Fertility and IVF</a>
+                <a href="gastro.html"><i class="fa-regular fa-hand-point-right"></i> Gastroenterology</a>
+                <a href="genmed.html"><i class="fa-regular fa-hand-point-right"></i> General Medicine</a>
+                <a href="gensur.html"><i class="fa-regular fa-hand-point-right"></i> General Surgery</a>
+                <a href="hematology.html"><i class="fa-regular fa-hand-point-right"></i> Hematology</a>
+                <a href="joinrep.html"><i class="fa-regular fa-hand-point-right"></i> Joint Replacement Surgery</a>
+                <a href="nephrology.html"><i class="fa-regular fa-hand-point-right"></i> Nephrology</a>
+            </div>
+
+            <div class="fdept2">
+                <a href="neurology.html"><i class="fa-regular fa-hand-point-right"></i> Neurology</a>
+                <a href="neusur.html"><i class="fa-regular fa-hand-point-right"></i> Neurosurgery</a>
+                <a href="obstgyn.html"><i class="fa-regular fa-hand-point-right"></i> Obstetrics and Gynaecology</a>
+                <a href="onco.html"><i class="fa-regular fa-hand-point-right"></i> Oncology</a>
+                <a href="opthalmology.html"><i class="fa-regular fa-hand-point-right"></i> Opthalmology</a>
+                <a href="transplant.html"><i class="fa-regular fa-hand-point-right"></i> Organs Transplantation</a>
+                <a href="ortho.html"><i class="fa-regular fa-hand-point-right"></i> Orthopedics</a>
+                <a href="paedia.html"><i class="fa-regular fa-hand-point-right"></i> Pediatrics</a>
+                <a href="plascos.html"><i class="fa-regular fa-hand-point-right"></i> Plastic and Cosmetic Surgery</a>
+                <a href="psychia.html"><i class="fa-regular fa-hand-point-right"></i> Psychiatry</a>
+                <a href="pulmno.html"><i class="fa-regular fa-hand-point-right"></i> Pulmonology</a>
+                <a href="rad.html"><i class="fa-regular fa-hand-point-right"></i> Radiology</a>
+                <a href="rheu.html"><i class="fa-regular fa-hand-point-right"></i> Rheumatology</a>
+                <a href="robo.html"><i class="fa-regular fa-hand-point-right"></i> Robotics Surgery</a>
+                <a href="urology.html"><i class="fa-regular fa-hand-point-right"></i> Urology</a>
+                <a href="vascular.html"><i class="fa-regular fa-hand-point-right"></i> Vascular Surgery</a>
+            </div>
         </div>
     </div>
 </body>
